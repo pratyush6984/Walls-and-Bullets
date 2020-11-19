@@ -12,11 +12,7 @@ function setup() {
   	wall.shapeColor=color(80,80,80)
 }
 
-
-function draw() {
-  background(0);
-
- function hasCollided(bullets, wall)
+ function hasCollided(bullet, wall)
  {
 	 bulletRightEdge=bullet.x +bullet.width;
 	 wallLeftEdge=wall.x;
@@ -41,6 +37,11 @@ function draw() {
 			 wall.shapeColor = color(0,255,0);
 		 }
 	 }
+
+function draw() {
+  background(0);
+
+
   
   drawSprites();
  
